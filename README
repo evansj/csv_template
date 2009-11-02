@@ -1,0 +1,19 @@
+CsvTemplate
+===========
+
+ActionView::TemplateHandler for csv templates.
+
+Requires the fastercsv gem.
+
+Example
+=======
+
+in views/something/data.csv.csv:
+
+  csv << ['Header 1', 'Header 2']
+
+  @data.each do |d|
+    csv << [d.id, d.name]
+  end
+
+Copyright (c) 2008 Jon Evans, jon@springyweb.com, released under the MIT license
